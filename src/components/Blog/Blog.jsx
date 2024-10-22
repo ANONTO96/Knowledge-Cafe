@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Blog = ({blog}) => {
+const Blog = ({blog, handleAddToBookmark}) => {
     const {title,cover_image,reading_time,author,author_image,posted_date,hash_tags} = blog;
     return (
         <div className="mb-8 w-[90%] mx-auto">
@@ -15,10 +15,10 @@ const Blog = ({blog}) => {
                 </div>
                 <div className="flex">
                     <span>{reading_time} mins read</span>
-                    <button><img className="w-6 h-6" src="https://img.icons8.com/?size=100&id=26087&format=png&color=000000" alt="" /></button>
+                    <button onClick={() => handleAddToBookmark(blog)}><img className="w-6 h-6" src="https://img.icons8.com/?size=100&id=iBJpnJfF62fn&format=png&color=000000" alt="" /></button>
                 </div>
             </div>
-            <h2 className="text-2xl">{title}</h2>
+            <h2 className="text-2xl mb-2">{title}</h2>
             <p className="text-gray-600">
                 {
                   hash_tags.map((hashtag, idx) => <span className="mr-1" key={idx}><a href="">{hashtag}</a></span>)
@@ -30,7 +30,8 @@ const Blog = ({blog}) => {
 };
 
 Blog.propTypes = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleAddToBookmark: PropTypes.func
 } 
 
 export default Blog;
