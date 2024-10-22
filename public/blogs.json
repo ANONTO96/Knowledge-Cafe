@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "cover_image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30",
+      "title": "Exploring the Cosmos",
+      "author": "Alice Johnson",
+      "author_image": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde",
+      "posted_date": "2024-10-15",
+      "reading_time": 10,
+      "hash_tags": ["#science", "#astronomy", "#space"]
+    },
+    {
+      "id": 2,
+      "cover_image": "https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "The Art of Minimalism",
+      "author": "David Lee",
+      "author_image": "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126",
+      "posted_date": "2024-09-10",
+      "reading_time": 7,
+      "hash_tags": ["#design", "#minimalism", "#lifestyle"]
+    },
+    {
+      "id": 3,
+      "cover_image": "https://images.unsplash.com/photo-1456574808786-d2ba7a6aa654?q=80&w=1044&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "A Journey Through Time",
+      "author": "Maria Gonzales",
+      "author_image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+      "posted_date": "2024-08-05",
+      "reading_time": 12,
+      "hash_tags": ["#history", "#culture", "#timetravel"]
+    },
+    {
+      "id": 4,
+      "cover_image": "https://images.unsplash.com/photo-1521791136064-7986c2920216",
+      "title": "Mastering Python",
+      "author": "John Smith",
+      "author_image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+      "posted_date": "2024-10-01",
+      "reading_time": 15,
+      "hash_tags": ["#programming", "#python", "#coding"]
+    },
+    {
+      "id": 5,
+      "cover_image": "https://plus.unsplash.com/premium_photo-1664908408457-680b842a9880?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "title": "Healthy Living Tips",
+      "author": "Sophie Lee",
+      "author_image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+      "posted_date": "2024-09-22",
+      "reading_time": 8,
+      "hash_tags": ["#health", "#wellness", "#nutrition"]
+    }
+  ]
+  
