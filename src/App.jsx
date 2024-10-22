@@ -17,7 +17,7 @@ function App() {
 
   const handleMarkAsRead = (time,id) => {
     setReadingTime(readingTime + time);
-    
+
     // remove the read blog from bookmark
   const remainingBookmarks = bookmarks.filter(bookmark => bookmark.id !== id)
   setBookmarks(remainingBookmarks);
@@ -26,9 +26,9 @@ function App() {
 
   return (
     <>
-    <div className='w-[90%] md:w-[90%] mx-auto'>
+    <div className='w-full md:w-[75%] mx-auto'>
     <Header></Header>
-    <main className='md:flex w-[90%] md:w-[80%] mx-auto'>
+    <main className='w-full md:w-[90%] mx-auto md:flex'>
     <Blogs handleMarkAsRead={handleMarkAsRead} handleAddToBookmark = {handleAddToBookmark}></Blogs>
     <Bookmarks bookmarks= {bookmarks} readingTime={readingTime}></Bookmarks>
     </main>
