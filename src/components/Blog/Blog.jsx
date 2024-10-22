@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
-const Blog = ({blog, handleAddToBookmark}) => {
-    const {title,cover_image,reading_time,author,author_image,posted_date,hash_tags} = blog;
+const Blog = ({blog, handleAddToBookmark, handleMarkAsRead}) => {
+    const {title,cover_image,readingTime,author,author_image,posted_date,hash_tags} = blog;
     return (
         <div className="mb-8 w-[90%] mx-auto">
             <img className="" src={cover_image} alt="" />
@@ -14,7 +14,7 @@ const Blog = ({blog, handleAddToBookmark}) => {
                 </div>
                 </div>
                 <div className="flex">
-                    <span>{reading_time} mins read</span>
+                    <span>{readingTime} mins read</span>
                     <button onClick={() => handleAddToBookmark(blog)}><img className="w-6 h-6" src="https://img.icons8.com/?size=100&id=iBJpnJfF62fn&format=png&color=000000" alt="" /></button>
                 </div>
             </div>
@@ -24,14 +24,15 @@ const Blog = ({blog, handleAddToBookmark}) => {
                   hash_tags.map((hashtag, idx) => <span className="mr-1" key={idx}><a href="">{hashtag}</a></span>)
                 }
             </p>
-            <p className="text-blue-800"><a href="">Mark as read</a></p>
+            <button onClick={() => handleMarkAsRead(readingTime)} className="text-blue-800 font-bold underline">Mark as read</button>
         </div>
     );
 };
 
 Blog.propTypes = {
     blog: PropTypes.object.isRequired,
-    handleAddToBookmark: PropTypes.func
+    handleAddToBookmark: PropTypes.func,
+    handleMarkAsRead: PropTypes.func
 } 
 
 export default Blog;
